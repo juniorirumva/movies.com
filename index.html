@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Irumva - Home</title>
+    <style>
+        /* Amabara ya background ya buri section */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e9ef; /* Ibara ryoroshye rya background */
+        }
+        header {
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        #home {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+        }
+        .featured-movies {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #fafafa;
+        }
+        .featured-movies .movie {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        #upload form {
+            background-color: #ffffff;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        #upload form button {
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        #upload form button:hover {
+            background-color: #ffcc00;
+        }
+        footer {
+            background-color: #4a90e2;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Junior Irumva</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#upload">Upload Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Junior Irumva</h2>
+        <p>Explore videos and share your own creations!</p>
+    </section>
+    
+    <section id="videos">
+        <h2>Featured Videos</h2>
+        <div class="featured-movies">
+            <div class="movie">
+                <h3>Sample Video 1</h3>
+                <p>Description of the video.</p>
+            </div>
+            <div class="movie">
+                <h3>Sample Video 2</h3>
+                <p>Description of the video.</p>
+            </div>
+            <div class="movie">
+                <h3>Sample Video 3</h3>
+                <p>Description of the video.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="upload">
+        <h2>Upload Your Video</h2>
+        <form>
+            <input type="file" name="video" required>
+            <button type="submit">Upload Video</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Junior Irumva - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
